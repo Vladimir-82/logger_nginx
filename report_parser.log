@@ -64,3 +64,11 @@ KeyboardInterrupt
 [2024.10.05 13:20:09] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
 [2024.10.05 13:20:09] I Loading template.
 [2024.10.05 13:20:09] I Report already exist.
+[2024.10.05 17:27:59] I Initializing report manager.
+[2024.10.05 17:27:59] I Searching last log file.
+[2024.10.05 17:27:59] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.05 17:27:59] I Loading template.
+[2024.10.05 17:27:59] I Getting urls data.
+[2024.10.05 17:29:55] I Successfully parsed > parsed_lines_count=2613686
+[2024.10.05 17:29:56] I Report prepared.
+[2024.10.05 17:29:56] I Report created.
