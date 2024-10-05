@@ -4,9 +4,7 @@ import gzip
 import json
 import logging
 import os
-
 import re
-
 import typing
 from collections import namedtuple
 from datetime import datetime
@@ -125,7 +123,7 @@ class NginxReportManager:
                 else:
                     if last_log_file_data.date < log_file_data.date:
                         last_log_file_data = log_file_data
-        return last_log_file_data
+        return last_log_file_data  # type: ignore
 
     @staticmethod
     def get_file_line_count(opener: partial, full_path: str) -> int:
@@ -195,7 +193,7 @@ class NginxReportManager:
         """Создание отчета."""
         if not self.template_with_data:
             urls_data = self.get_urls_data()
-            self.template_with_data = self.template.safe_substitute(table_json=urls_data.as_json())
+            self.template_with_data = self.template.safe_substitute(table_json=urls_data.as_json())  # type: ignore
             logging.info("Report prepared.")
         else:
             logging.info("Report already prepared.")
@@ -206,7 +204,7 @@ class NginxReportManager:
             if not self.template_with_data:
                 self.create_report()
             with open(self.report_path, "w") as report_file:
-                report_file.write(self.template_with_data)
+                report_file.write(self.template_with_data)  # type: ignore
             logging.info("Report created.")
         else:
             logging.info("Report already exist.")

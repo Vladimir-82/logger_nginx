@@ -72,3 +72,11 @@ KeyboardInterrupt
 [2024.10.05 17:29:55] I Successfully parsed > parsed_lines_count=2613686
 [2024.10.05 17:29:56] I Report prepared.
 [2024.10.05 17:29:56] I Report created.
+[2024.10.05 20:28:42] I Initializing report manager.
+[2024.10.05 20:28:42] I Searching last log file.
+[2024.10.05 20:28:42] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.05 20:28:42] I Loading template.
+[2024.10.05 20:28:42] I Getting urls data.
+[2024.10.05 20:30:37] I Successfully parsed > parsed_lines_count=2613686
+[2024.10.05 20:30:38] I Report prepared.
+[2024.10.05 20:30:38] I Report created.

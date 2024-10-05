@@ -80,7 +80,7 @@
         columns = columns.slice(columns.length -1, columns.length).concat(columns.slice(0, columns.length -1));
         drawColumns();
         drawRows(table.slice(0, lastRow));
-        $(".report-table").tablesorter(); 
+        $(".report-table").tablesorter();
     });
 
     function drawColumns() {
@@ -119,7 +119,7 @@
         }
         $table.append($row);
       }
-      $(".report-table").trigger("update"); 
+      $(".report-table").trigger("update");
     }
 
     function bindScroll() {
