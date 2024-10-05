@@ -1,0 +1,66 @@
+[2024.10.04 22:46:57] I Initializing report manager.
+[2024.10.04 22:46:57] I Searching last log file.
+[2024.10.04 22:46:57] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.04 22:46:57] I Loading template.
+[2024.10.04 22:46:57] I Getting urls data.
+[2024.10.04 22:48:53] I Successfully parsed > parsed_lines_count=2613686
+[2024.10.04 22:48:54] I Report prepared.
+[2024.10.04 22:48:54] I Report created.
+[2024.10.05 13:04:20] I Initializing report manager.
+[2024.10.05 13:04:20] I Searching last log file.
+[2024.10.05 13:04:20] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.05 13:04:20] I Loading template.
+[2024.10.05 13:04:20] I Report already exist.
+[2024.10.05 13:04:36] I Initializing report manager.
+[2024.10.05 13:04:36] I Searching last log file.
+[2024.10.05 13:04:36] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.05 13:04:36] I Loading template.
+[2024.10.05 13:04:36] I Getting urls data.
+[2024.10.05 13:06:31] I Successfully parsed > parsed_lines_count=2613686
+[2024.10.05 13:06:33] I Report prepared.
+[2024.10.05 13:06:33] I Report created.
+[2024.10.05 13:09:43] I Initializing report manager.
+[2024.10.05 13:09:43] I Searching last log file.
+[2024.10.05 13:09:43] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.05 13:09:43] I Loading template.
+[2024.10.05 13:09:43] I Report already exist.
+[2024.10.05 13:10:43] I Initializing report manager.
+[2024.10.05 13:10:43] I Searching last log file.
+[2024.10.05 13:10:43] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.05 13:10:43] I Loading template.
+[2024.10.05 13:10:43] I Getting urls data.
+[2024.10.05 13:10:52] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 67, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 62, in main
+    report_manager.prepare_and_save_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 203, in prepare_and_save_report
+    self.create_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 193, in create_report
+    urls_data = self.get_urls_data()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 140, in get_urls_data
+    urls_data, parsed_lines_percent = self.get_parsed_lines(opener, full_path)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 162, in get_parsed_lines
+    result = re.match(self.re, line)
+  File "/usr/lib/python3.10/re.py", line 190, in match
+    return _compile(pattern, flags).match(string)
+KeyboardInterrupt
+[2024.10.05 13:17:44] I Initializing report manager.
+[2024.10.05 13:17:44] I Searching last log file.
+[2024.10.05 13:17:44] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.05 13:17:44] I Loading template.
+[2024.10.05 13:17:44] I Getting urls data.
+[2024.10.05 13:19:37] I Successfully parsed > parsed_lines_count=2613686
+[2024.10.05 13:19:38] I Report prepared.
+[2024.10.05 13:19:38] I Report created.
+[2024.10.05 13:19:58] I Initializing report manager.
+[2024.10.05 13:19:58] I Searching last log file.
+[2024.10.05 13:19:58] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.05 13:19:58] I Loading template.
+[2024.10.05 13:19:58] I Report already exist.
+[2024.10.05 13:20:09] I Initializing report manager.
+[2024.10.05 13:20:09] I Searching last log file.
+[2024.10.05 13:20:09] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.05 13:20:09] I Loading template.
+[2024.10.05 13:20:09] I Report already exist.
