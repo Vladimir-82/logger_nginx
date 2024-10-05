@@ -6,12 +6,12 @@ import unittest
 from unittest import mock
 
 from report_manager import NginxReportManager
-from test.constants import TABLE_JSON
+from tests.constants import TABLE_JSON
 
 
 @mock.patch('report_manager.progress_handler', new=mock.Mock())
 class TestReportParser(unittest.TestCase):
-    """Тестирование парсера логов."""
+    """Тестирование парсера логов. """
 
     def setUp(self):
         """Определение переменных для тестирования."""
@@ -19,10 +19,10 @@ class TestReportParser(unittest.TestCase):
         logging.disable(logging.CRITICAL)
         self.config = {
             'REPORT_SIZE': 800,
-            'REPORT_DIR': './data/reports',
-            'TEMPLATES_DIR': './data/templates',
+            'REPORT_DIR': './tests/data/reports',
+            'TEMPLATES_DIR': './tests/data/templates',
             'REPORT_TEMPLATE_FILE': 'report.html',
-            'LOG_DIR': './data/logs',
+            'LOG_DIR': './tests/data/logs',
             'MAX_UNPARSED_LINES': 0.1,
         }
         self.test_report_file_name = 'report-2018.06.30.html'
@@ -42,7 +42,7 @@ class TestReportParser(unittest.TestCase):
     @mock.patch('report_manager.Template.safe_substitute')
     def test_default_config(self, mock_safe_substitute):
         """Создание отчета из файла из переменной config по умолчанию."""
-        mock_safe_substitute.return_value = 'test'
+        mock_safe_substitute.return_value = 'tests'
         report_manager = NginxReportManager(self.config)
         report_full_path = f'{self.config["REPORT_DIR"]}/{self.test_report_file_name}'
         self.assertFalse(os.path.exists(report_full_path))
@@ -56,8 +56,8 @@ class TestReportParser(unittest.TestCase):
     @mock.patch('report_manager.Template.safe_substitute')
     def test_change_config(self, mock_safe_substitute):
         """Создание отчета из другого файла с переопределением пути."""
-        mock_safe_substitute.return_value = 'test'
-        self.config['LOG_DIR'] = './data/gz_logs'
+        mock_safe_substitute.return_value = 'tests'
+        self.config['LOG_DIR'] = './tests/data/gz_logs'
         report_manager = NginxReportManager(self.config)
         report_full_path = f'{self.config["REPORT_DIR"]}/{self.test_report_file_name}'
         self.assertFalse(os.path.exists(report_full_path))

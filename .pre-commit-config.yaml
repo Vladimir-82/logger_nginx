@@ -1,0 +1,6 @@
+- repo: local
+  hooks:
+  - id: pytest
+    name: pytest
+    entry: bash -c 'pytest'
+    language: system
