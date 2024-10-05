@@ -18,7 +18,7 @@ config = {
 }
 
 
-def start_logging(parsed_config: dict) -> None:
+def start_logging(parsed_config) -> None:
     """Запись логов."""
     logging.basicConfig(
         filename=parsed_config.get('LOG_PATH', None),
