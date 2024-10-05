@@ -11,7 +11,7 @@ from tests.constants import TABLE_JSON
 
 @mock.patch('report_manager.progress_handler', new=mock.Mock())
 class TestReportParser(unittest.TestCase):
-    """Тестирование парсера логов. """
+    """Тестирование парсера логов."""
 
     def setUp(self):
         """Определение переменных для тестирования."""
