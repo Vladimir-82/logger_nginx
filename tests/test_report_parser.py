@@ -14,7 +14,7 @@ class TestReportParser(unittest.TestCase):
     """Тестирование парсера логов."""
 
     def setUp(self):
-        """Определение переменных для тестирования."""
+        """Определение переменных  для тестирования."""
         super(TestReportParser, self).setUp()
         logging.disable(logging.CRITICAL)
         self.config = {
