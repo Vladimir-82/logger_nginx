@@ -26,12 +26,12 @@ jobs: # jobs. We will have two jobs (test and publish) with multiple steps.
           poetry-version: 1.2.0
       - name: Install dependencies
         run: poetry install
-      - name: Pytest
-        run: |
-          poetry run pytest
       - name: mypy  # Run mypy static analysis
         run: |
           poetry run mypy .
+      - name: Pytest
+        run: |
+          poetry run pytest tests
 
   publish:
     # Our publish job will only run on release creation events,
