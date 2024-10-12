@@ -80,3 +80,474 @@ KeyboardInterrupt
 [2024.10.05 20:30:37] I Successfully parsed > parsed_lines_count=2613686
 [2024.10.05 20:30:38] I Report prepared.
 [2024.10.05 20:30:38] I Report created.
+[2024.10.06 08:57:31] I Initializing report manager.
+[2024.10.06 08:57:31] I Searching last log file.
+[2024.10.06 08:57:31] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 08:57:31] I Loading template.
+[2024.10.06 08:57:31] I Getting urls data.
+[2024.10.06 08:59:26] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 63, in main
+    report_manager.prepare_and_save_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 205, in prepare_and_save_report
+    self.create_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 195, in create_report
+    urls_data = self.get_urls_data()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 142, in get_urls_data
+    urls_data, parsed_lines_percent = self.get_parsed_lines(opener, full_path)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 169, in get_parsed_lines
+    progress_handler(num / line_count)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/helpers.py", line 20, in progress_handler
+    sys.stdout.write(text)
+KeyboardInterrupt
+[2024.10.06 09:00:47] I Initializing report manager.
+[2024.10.06 09:00:47] I Searching last log file.
+[2024.10.06 09:00:47] E Log files not found.
+[2024.10.06 09:00:47] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 62, in main
+    report_manager = NginxReportManager(config)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 85, in __init__
+    raise FileNotFoundError("Log files not found.")
+FileNotFoundError: Log files not found.
+[2024.10.06 09:01:33] I Initializing report manager.
+[2024.10.06 09:01:33] I Searching last log file.
+[2024.10.06 09:01:33] E Log files not found.
+[2024.10.06 09:01:33] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 62, in main
+    report_manager = NginxReportManager(config)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 85, in __init__
+    raise FileNotFoundError("Log files not found.")
+FileNotFoundError: Log files not found.
+[2024.10.06 09:12:08] I Initializing report manager.
+[2024.10.06 09:12:08] I Searching last log file.
+[2024.10.06 09:12:08] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 09:12:08] I Loading template.
+[2024.10.06 09:12:08] I Getting urls data.
+[2024.10.06 09:14:22] I Successfully parsed > parsed_lines_count=2613686
+[2024.10.06 09:14:23] I Report prepared.
+[2024.10.06 09:14:23] I Report created.
+[2024.10.06 09:15:29] I Initializing report manager.
+[2024.10.06 09:15:29] I Searching last log file.
+[2024.10.06 09:15:29] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 09:15:29] I Loading template.
+[2024.10.06 09:15:29] I Report already exist.
+[2024.10.06 09:17:25] I Initializing report manager.
+[2024.10.06 09:17:25] I Searching last log file.
+[2024.10.06 09:17:25] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 09:17:25] I Loading template.
+[2024.10.06 09:17:25] I Getting urls data.
+[2024.10.06 09:19:39] I Successfully parsed > parsed_lines_count=2613686
+[2024.10.06 09:19:40] I Report prepared.
+[2024.10.06 09:19:40] I Report created.
+[2024.10.06 09:20:33] I Initializing report manager.
+[2024.10.06 09:20:33] I Searching last log file.
+[2024.10.06 09:20:33] E Log files not found.
+[2024.10.06 09:20:33] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 62, in main
+    report_manager = NginxReportManager(config)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 85, in __init__
+    raise FileNotFoundError("Log files not found.")
+FileNotFoundError: Log files not found.
+[2024.10.06 09:22:47] I Initializing report manager.
+[2024.10.06 09:23:24] I Searching last log file.
+[2024.10.06 09:28:13] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 62, in main
+    report_manager = NginxReportManager(config)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 75, in __init__
+    if self.log_file_data:
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 75, in __init__
+    if self.log_file_data:
+  File "/home/ukastsiukevich/pycharm-professional-2024.1.4/pycharm-2024.1.4/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 892, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/ukastsiukevich/pycharm-professional-2024.1.4/pycharm-2024.1.4/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 412, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/ukastsiukevich/pycharm-professional-2024.1.4/pycharm-2024.1.4/plugins/python/helpers/pydev/pydevd.py", line 1201, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "/home/ukastsiukevich/pycharm-professional-2024.1.4/pycharm-2024.1.4/plugins/python/helpers/pydev/pydevd.py", line 1216, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+[2024.10.06 09:29:42] I Initializing report manager.
+[2024.10.06 09:29:52] I Initializing report manager.
+[2024.10.06 09:29:52] I Searching last log file.
+[2024.10.06 09:29:52] E Log files not found.
+[2024.10.06 09:29:52] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 62, in main
+    report_manager = NginxReportManager(config)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 108, in __init__
+    raise FileNotFoundError("Log files not found.")
+FileNotFoundError: Log files not found.
+[2024.10.06 09:30:07] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 62, in main
+    report_manager = NginxReportManager(config)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 95, in __init__
+    super(NginxReportManager, self).__init__(config)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 95, in __init__
+    super(NginxReportManager, self).__init__(config)
+  File "/home/ukastsiukevich/pycharm-professional-2024.1.4/pycharm-2024.1.4/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 755, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/ukastsiukevich/pycharm-professional-2024.1.4/pycharm-2024.1.4/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 412, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/ukastsiukevich/pycharm-professional-2024.1.4/pycharm-2024.1.4/plugins/python/helpers/pydev/pydevd.py", line 1201, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "/home/ukastsiukevich/pycharm-professional-2024.1.4/pycharm-2024.1.4/plugins/python/helpers/pydev/pydevd.py", line 1216, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+[2024.10.06 09:30:12] I Initializing report manager.
+[2024.10.06 09:30:20] I Searching last log file.
+[2024.10.06 09:34:38] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 62, in main
+    report_manager = NginxReportManager(config)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 98, in __init__
+    is_zip = bool(result.group(2))
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 98, in __init__
+    is_zip = bool(result.group(2))
+  File "/home/ukastsiukevich/pycharm-professional-2024.1.4/pycharm-2024.1.4/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 892, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/ukastsiukevich/pycharm-professional-2024.1.4/pycharm-2024.1.4/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 412, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/ukastsiukevich/pycharm-professional-2024.1.4/pycharm-2024.1.4/plugins/python/helpers/pydev/pydevd.py", line 1201, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "/home/ukastsiukevich/pycharm-professional-2024.1.4/pycharm-2024.1.4/plugins/python/helpers/pydev/pydevd.py", line 1216, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+[2024.10.06 09:34:48] I Initializing report manager.
+[2024.10.06 09:34:48] I Searching last log file.
+[2024.10.06 09:34:48] E Log files not found.
+[2024.10.06 09:34:48] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 62, in main
+    report_manager = NginxReportManager(config)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 85, in __init__
+    raise FileNotFoundError("Log files not found.")
+FileNotFoundError: Log files not found.
+[2024.10.06 09:35:51] I Initializing report manager.
+[2024.10.06 09:35:51] I Searching last log file.
+[2024.10.06 09:35:51] E Log files not found.
+[2024.10.06 09:35:51] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 62, in main
+    report_manager = NginxReportManager(config)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 85, in __init__
+    raise FileNotFoundError("Log files not found.")
+FileNotFoundError: Log files not found.
+[2024.10.06 09:54:04] I Initializing report manager.
+[2024.10.06 09:54:04] I Searching last log file.
+[2024.10.06 09:54:04] E Log files not found.
+[2024.10.06 09:54:04] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 62, in main
+    report_manager = NginxReportManager(config)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 85, in __init__
+    raise FileNotFoundError("Log files not found.")
+FileNotFoundError: Log files not found.
+[2024.10.06 09:58:36] I Initializing report manager.
+[2024.10.06 09:58:36] I Searching last log file.
+[2024.10.06 09:58:36] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 09:58:36] I Loading template.
+[2024.10.06 09:58:36] I Getting urls data.
+[2024.10.06 10:00:47] I Successfully parsed > parsed_lines_count=2613686
+[2024.10.06 10:00:48] I Report prepared.
+[2024.10.06 10:00:48] I Report created.
+[2024.10.06 10:04:14] I Initializing report manager.
+[2024.10.06 10:04:14] I Searching last log file.
+[2024.10.06 10:04:14] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 10:04:14] I Loading template.
+[2024.10.06 10:04:14] I Getting urls data.
+[2024.10.06 10:06:26] I Successfully parsed > parsed_lines_count=2613686
+[2024.10.06 10:06:27] I Report prepared.
+[2024.10.06 10:06:27] I Report created.
+[2024.10.06 10:13:47] I Initializing report manager.
+[2024.10.06 10:13:47] I Searching last log file.
+[2024.10.06 10:13:47] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 10:13:47] I Loading template.
+[2024.10.06 10:13:47] I Getting urls data.
+[2024.10.06 10:14:00] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 63, in main
+    report_manager.prepare_and_save_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 205, in prepare_and_save_report
+    self.create_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 195, in create_report
+    urls_data = self.get_urls_data()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 142, in get_urls_data
+    urls_data, parsed_lines_percent = self.get_parsed_lines(opener, full_path)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 164, in get_parsed_lines
+    result = re.match(self.re, line)
+  File "/usr/lib/python3.10/re.py", line 190, in match
+    return _compile(pattern, flags).match(string)
+KeyboardInterrupt
+[2024.10.06 10:25:57] I Initializing report manager.
+[2024.10.06 10:25:57] I Searching last log file.
+[2024.10.06 10:25:57] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 10:25:57] I Loading template.
+[2024.10.06 10:25:57] I Getting urls data.
+[2024.10.06 10:26:02] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 63, in main
+    report_manager.prepare_and_save_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 205, in prepare_and_save_report
+    self.create_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 195, in create_report
+    urls_data = self.get_urls_data()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 142, in get_urls_data
+    urls_data, parsed_lines_percent = self.get_parsed_lines(opener, full_path)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 169, in get_parsed_lines
+    progress_handler(num / line_count)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/helpers.py", line 20, in progress_handler
+    sys.stdout.write(text)
+KeyboardInterrupt
+[2024.10.06 10:31:47] I Initializing report manager.
+[2024.10.06 10:31:47] I Searching last log file.
+[2024.10.06 10:31:47] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 10:31:47] I Loading template.
+[2024.10.06 10:31:47] I Getting urls data.
+[2024.10.06 10:31:51] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 63, in main
+    report_manager.prepare_and_save_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 205, in prepare_and_save_report
+    self.create_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 195, in create_report
+    urls_data = self.get_urls_data()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 142, in get_urls_data
+    urls_data, parsed_lines_percent = self.get_parsed_lines(opener, full_path)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 164, in get_parsed_lines
+    result = re.match(self.re, line)
+  File "/usr/lib/python3.10/re.py", line 190, in match
+    return _compile(pattern, flags).match(string)
+KeyboardInterrupt
+[2024.10.06 10:36:35] I Initializing report manager.
+[2024.10.06 10:36:35] I Searching last log file.
+[2024.10.06 10:36:35] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 10:36:35] I Loading template.
+[2024.10.06 10:36:35] I Getting urls data.
+[2024.10.06 10:36:39] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 69, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 64, in main
+    report_manager.prepare_and_save_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 205, in prepare_and_save_report
+    self.create_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 195, in create_report
+    urls_data = self.get_urls_data()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 142, in get_urls_data
+    urls_data, parsed_lines_percent = self.get_parsed_lines(opener, full_path)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 164, in get_parsed_lines
+    result = re.match(self.re, line)
+  File "/usr/lib/python3.10/re.py", line 190, in match
+    return _compile(pattern, flags).match(string)
+KeyboardInterrupt
+[2024.10.06 10:36:43] I Initializing report manager.
+[2024.10.06 10:36:43] I Searching last log file.
+[2024.10.06 10:36:43] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 10:36:43] I Loading template.
+[2024.10.06 10:36:43] I Getting urls data.
+[2024.10.06 10:36:47] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 69, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 64, in main
+    report_manager.prepare_and_save_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 205, in prepare_and_save_report
+    self.create_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 195, in create_report
+    urls_data = self.get_urls_data()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 142, in get_urls_data
+    urls_data, parsed_lines_percent = self.get_parsed_lines(opener, full_path)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 164, in get_parsed_lines
+    result = re.match(self.re, line)
+  File "/usr/lib/python3.10/re.py", line 190, in match
+    return _compile(pattern, flags).match(string)
+KeyboardInterrupt
+[2024.10.06 10:44:55] I Initializing report manager.
+[2024.10.06 10:44:55] I Searching last log file.
+[2024.10.06 10:44:55] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 10:44:55] I Loading template.
+[2024.10.06 10:44:55] I Getting urls data.
+[2024.10.06 10:44:59] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 69, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 64, in main
+    report_manager.prepare_and_save_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 205, in prepare_and_save_report
+    self.create_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 195, in create_report
+    urls_data = self.get_urls_data()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 142, in get_urls_data
+    urls_data, parsed_lines_percent = self.get_parsed_lines(opener, full_path)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 164, in get_parsed_lines
+    result = re.match(self.re, line)
+  File "/usr/lib/python3.10/re.py", line 190, in match
+    return _compile(pattern, flags).match(string)
+KeyboardInterrupt
+[2024.10.06 10:45:02] I Initializing report manager.
+[2024.10.06 10:45:02] I Searching last log file.
+[2024.10.06 10:45:02] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 10:45:02] I Loading template.
+[2024.10.06 10:45:02] I Getting urls data.
+[2024.10.06 10:45:07] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 69, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 64, in main
+    report_manager.prepare_and_save_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 205, in prepare_and_save_report
+    self.create_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 195, in create_report
+    urls_data = self.get_urls_data()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 142, in get_urls_data
+    urls_data, parsed_lines_percent = self.get_parsed_lines(opener, full_path)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 169, in get_parsed_lines
+    progress_handler(num / line_count)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/helpers.py", line 20, in progress_handler
+    sys.stdout.write(text)
+KeyboardInterrupt
+[2024.10.06 10:45:26] I Initializing report manager.
+[2024.10.06 10:45:26] I Searching last log file.
+[2024.10.06 10:45:26] E Log files not found.
+[2024.10.06 10:45:26] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 69, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 63, in main
+    report_manager = NginxReportManager(custom_config) if args.config else NginxReportManager(config)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 85, in __init__
+    raise FileNotFoundError("Log files not found.")
+FileNotFoundError: Log files not found.
+[2024.10.06 10:45:33] I Initializing report manager.
+[2024.10.06 10:45:33] I Searching last log file.
+[2024.10.06 10:45:33] E Log files not found.
+[2024.10.06 10:45:33] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 69, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 63, in main
+    report_manager = NginxReportManager(custom_config) if args.config else NginxReportManager(config)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 85, in __init__
+    raise FileNotFoundError("Log files not found.")
+FileNotFoundError: Log files not found.
+[2024.10.06 11:06:27] I Initializing report manager.
+[2024.10.06 11:06:27] I Searching last log file.
+[2024.10.06 11:06:27] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 11:06:27] I Loading template.
+[2024.10.06 11:06:27] I Getting urls data.
+[2024.10.06 11:06:30] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 63, in main
+    report_manager.prepare_and_save_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 205, in prepare_and_save_report
+    self.create_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 195, in create_report
+    urls_data = self.get_urls_data()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 142, in get_urls_data
+    urls_data, parsed_lines_percent = self.get_parsed_lines(opener, full_path)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 164, in get_parsed_lines
+    result = re.match(self.re, line)
+  File "/usr/lib/python3.10/re.py", line 190, in match
+    return _compile(pattern, flags).match(string)
+KeyboardInterrupt
+[2024.10.06 11:06:34] I Initializing report manager.
+[2024.10.06 11:06:34] I Searching last log file.
+[2024.10.06 11:06:34] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 11:06:34] I Loading template.
+[2024.10.06 11:06:34] I Getting urls data.
+[2024.10.06 11:06:40] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 63, in main
+    report_manager.prepare_and_save_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 205, in prepare_and_save_report
+    self.create_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 195, in create_report
+    urls_data = self.get_urls_data()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 142, in get_urls_data
+    urls_data, parsed_lines_percent = self.get_parsed_lines(opener, full_path)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 169, in get_parsed_lines
+    progress_handler(num / line_count)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/helpers.py", line 20, in progress_handler
+    sys.stdout.write(text)
+KeyboardInterrupt
+[2024.10.06 11:11:10] I Initializing report manager.
+[2024.10.06 11:11:10] I Searching last log file.
+[2024.10.06 11:11:10] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 11:11:10] I Loading template.
+[2024.10.06 11:11:10] I Getting urls data.
+[2024.10.06 11:11:13] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 63, in main
+    report_manager.prepare_and_save_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 205, in prepare_and_save_report
+    self.create_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 195, in create_report
+    urls_data = self.get_urls_data()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 142, in get_urls_data
+    urls_data, parsed_lines_percent = self.get_parsed_lines(opener, full_path)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 169, in get_parsed_lines
+    progress_handler(num / line_count)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/helpers.py", line 17, in progress_handler
+    round(progress * 100, 1),
+KeyboardInterrupt
+[2024.10.06 11:11:20] I Initializing report manager.
+[2024.10.06 11:11:20] I Searching last log file.
+[2024.10.06 11:11:20] I Found log file > log_file_name=nginx-access-ui.log-20170630.gz
+[2024.10.06 11:11:20] I Loading template.
+[2024.10.06 11:11:20] I Getting urls data.
+[2024.10.06 11:11:23] E Unexpected error.
+Traceback (most recent call last):
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 68, in <module>
+    main()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/log_analyzer.py", line 63, in main
+    report_manager.prepare_and_save_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 205, in prepare_and_save_report
+    self.create_report()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 195, in create_report
+    urls_data = self.get_urls_data()
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 142, in get_urls_data
+    urls_data, parsed_lines_percent = self.get_parsed_lines(opener, full_path)
+  File "/home/ukastsiukevich/PycharmProjects/logger_nginx/report_manager.py", line 164, in get_parsed_lines
+    result = re.match(self.re, line)
+  File "/usr/lib/python3.10/re.py", line 190, in match
+    return _compile(pattern, flags).match(string)
+KeyboardInterrupt

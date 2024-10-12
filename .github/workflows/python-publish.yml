@@ -13,7 +13,7 @@ jobs: # jobs. We will have two jobs (test and publish) with multiple steps.
     runs-on: ubuntu-latest
     strategy: 
       matrix:
-        python-version: [3.10]
+        python-version: [3.10.12]
 
     steps:
       - uses: actions/checkout@v2
@@ -29,6 +29,9 @@ jobs: # jobs. We will have two jobs (test and publish) with multiple steps.
       - name: Pytest
         run: |
           poetry run pytest
+      - name: mypy  # Run mypy static analysis
+        run: |
+          poetry run mypy .
 
   publish:
     # Our publish job will only run on release creation events,
