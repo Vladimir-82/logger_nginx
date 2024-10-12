@@ -37,7 +37,7 @@ jobs: # jobs. We will have two jobs (test and publish) with multiple steps.
           poetry run flake8 .
       - name: ruff
         run: |
-          poetry run ruff .
+          poetry run ruff check .
 
   publish:
     # Our publish job will only run on release creation events,
