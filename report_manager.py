@@ -85,7 +85,7 @@ class NginxReportManager:
             raise FileNotFoundError("Log files not found.")
 
     @staticmethod
-    def get_log_file_data(file_name, regex=None):
+    def get_log_file_data(file_name: str, regex=None):  # type: ignore
         """Получение файла лога по названию и по расширению."""
         regex = regex or r"nginx-access-ui\.log-(\d+)(\.gz)?"
         result = re.match(regex, file_name)
@@ -149,7 +149,7 @@ class NginxReportManager:
         if self.log_file_data.is_zip:
             opener = partial(gzip.open, encoding="utf-8", mode="rt")
         else:
-            opener = partial(open, encoding="utf-8", mode="rt")
+            opener = partial(open, encoding="utf-8", mode="rt")  # type: ignore
         return opener
 
     def get_parsed_lines(self, opener: partial, full_path: str) -> typing.Tuple[UrlsData, float]:  # noqa: UP006

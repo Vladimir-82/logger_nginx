@@ -28,7 +28,7 @@ def start_logging(parsed_config: dict) -> None:
     )
 
 
-def get_config(file_name=None) -> dict:
+def get_config(file_name: None=None) -> dict:
     """Получение конфига."""
     result_config = copy.deepcopy(config)
     if file_name:

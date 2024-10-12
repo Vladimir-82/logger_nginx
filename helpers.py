@@ -3,7 +3,7 @@
 import sys
 
 
-def progress_handler(progress) -> None:
+def progress_handler(progress: float) -> None:
     """Отображение процесса парсинга в консоле."""
     bar_length = 20
     status = ""
