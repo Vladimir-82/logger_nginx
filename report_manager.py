@@ -49,7 +49,9 @@ class UrlsData:
                     "time_perc": round(time_sum / self.all_request_time, 3),
                     "time_avg": round(time_sum / call_times, 3),
                     "time_max": round(max(request_time_list), 3),
-                    "time_med": round(sorted(request_time_list)[int(call_times / 2)], 3),
+                    "time_med": round(
+                        sorted(request_time_list)[int(call_times / 2)], 3
+                    ),
                 }
             )
         return json.dumps(data)
@@ -73,7 +75,9 @@ class NginxReportManager:
         self.log_file_data = self.get_last_log_file(self.config["LOG_DIR"])
 
         if self.log_file_data:
-            logging.info("Found log file > log_file_name=%s", self.log_file_data.file_name)
+            logging.info(
+                "Found log file > log_file_name=%s", self.log_file_data.file_name
+            )
             self.template = self.get_template()
             self.template_with_data = None
 
@@ -152,7 +156,9 @@ class NginxReportManager:
             opener = partial(open, encoding="utf-8", mode="rt")  # type: ignore
         return opener
 
-    def get_parsed_lines(self, opener: partial, full_path: str) -> typing.Tuple[UrlsData, float]:  # noqa: UP006
+    def get_parsed_lines(
+        self, opener: partial, full_path: str
+    ) -> typing.Tuple[UrlsData, float]:  # noqa: UP006
         """Получение распарсенного массива данных и отношения числа строк.
 
         Отношение числа строк в массиве данных к числу строк в файле нужно для просмотра прогресса.
@@ -173,19 +179,28 @@ class NginxReportManager:
     def check_lines(self, urls_data: UrlsData, parsed_lines_percent: float) -> None:
         """Проверка количества строк, которые были распарсены."""
         if parsed_lines_percent < self.config["MAX_UNPARSED_LINES"]:
-            logging.error("Too many lines unparsed > parsed_lines_percent=%s", parsed_lines_percent)
+            logging.error(
+                "Too many lines unparsed > parsed_lines_percent=%s",
+                parsed_lines_percent,
+            )
             raise Exception("Too many lines unparsed.")
-        logging.info("Successfully parsed > parsed_lines_count=%s", urls_data.all_request_count)
+        logging.info(
+            "Successfully parsed > parsed_lines_count=%s", urls_data.all_request_count
+        )
 
     def get_template(self) -> Template:
         """Получение шаблона."""
         logging.info("Loading template.")
-        template_path = f'{self.config["TEMPLATES_DIR"]}/{self.config["REPORT_TEMPLATE_FILE"]}'
+        template_path = (
+            f'{self.config["TEMPLATES_DIR"]}/{self.config["REPORT_TEMPLATE_FILE"]}'
+        )
         try:
             with open(template_path) as report_template_file:
                 report_template = report_template_file.read()
         except FileNotFoundError:
-            logging.exception("Template file not found > template_path=%s", template_path)
+            logging.exception(
+                "Template file not found > template_path=%s", template_path
+            )
             raise
         return Template(report_template)
 

@@ -47,7 +47,9 @@ def get_config(file_name: None = None) -> dict:
 def get_parsed_args() -> argparse.Namespace:
     """Получение аргументов для парсинга."""
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument("--config", default="config.json", help="Path to the config file.")
+    arg_parser.add_argument(
+        "--config", default="config.json", help="Path to the config file."
+    )
     return arg_parser.parse_args()
 
 
